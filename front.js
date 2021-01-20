@@ -83,18 +83,18 @@ inputs.onsubmit = async (event) => {
 };
 
 const renderElement = (obj) => {
-    const container = document.createElement('tr');  // tr
+    const container = document.createElement('tr');  
 
-    const id = document.createElement('td'); // td (id)
+    const id = document.createElement('td');
     id.innerText = obj.id;
 
-    const name = document.createElement('td'); // td (name)
+    const name = document.createElement('td'); 
     name.innerText = obj.firstName;
 
-    const sureName = document.createElement('td'); // td (age)
+    const sureName = document.createElement('td'); 
     sureName.innerText = obj.lastName;
 
-    const age = document.createElement('td'); // td (phone)
+    const age = document.createElement('td'); 
     age.innerText = obj.age;
 
     const editButton = document.createElement('button');
@@ -111,7 +111,7 @@ const renderElement = (obj) => {
     const deleteButton = document.createElement('button');
     deleteButton.className = 'btn btn-outline-danger';
     deleteButton.innerText = 'Delete';
-    const deleteButtonTd = document.createElement('td'); // td (actions)
+    const deleteButtonTd = document.createElement('td');
     deleteButtonTd.append(deleteButton);
     deleteButton.onclick = async () => {
         await deleteUserById(obj.id);
