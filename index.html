@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>app</title>
+</head>
+<body>
+<div class="container mt-4">
+    <h1>For adding</h1>
+    <form class="form-inline input-group" id="inputs">
+        <input type="text" required placeholder="Name" id="firstName">
+        <input type="text" required placeholder="Surname" id="surname">
+        <input type="number" required placeholder="Age" id="age">
+        <input type="submit" class="btn btn-outline-primary" id="createBtn" value="Create">
+    </form>
+    <h1>For editing</h1>
+    <form class="form-inline input-group" id="editInputs">
+        <input type="text" required readonly placeholder="Enter ID" id="forId">
+        <input type="text" placeholder="Name" id="editName">
+        <input type="text" placeholder="Surname" id="editSurname">
+        <input type="number" placeholder="Age" id="editAge">
+        <input type="submit" class="btn btn-outline-success" id="editBtn" value="Save">
+    </form>
+    <table class="table table-striped">
+        <thead>
+        <tr class="align-items-baseline">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody id="users">
+        <!--<tr>
+            <td>User ID</td>
+            <td>Random Name</td>
+            <td>Random Surname</td>
+            <td>Random Age</td>
+            <td>
+                <button class="btn btn-outline-success">
+                    Edit
+                </button>
+            </td>
+            <td>
+                <button class="btn btn-outline-danger">
+                    Delete
+                </button>
+            </td>
+        </tr>!-->
+        </tbody>
+    </table>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="front.js"></script>
+</body>
+</html>
